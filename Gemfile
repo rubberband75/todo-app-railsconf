@@ -15,6 +15,11 @@ group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
 
+group :production do
+  gem 'unicorn'
+  gem 'mysql2'
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
